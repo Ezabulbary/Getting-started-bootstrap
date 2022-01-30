@@ -64,95 +64,140 @@
                 <p>The table below illustrates how each container’s max-width compares to the original .container and .container-fluid across each breakpoint.
 
                 See them in action and compare them in our Grid example.</p>
+                <h3>Responsive containers</h3>
+                <p>Responsive containers allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply max-widths for each of the higher breakpoints. For example, .container-sm is 100% wide to start until the sm breakpoint is reached, where it will scale up with md, lg, xl, and xxl.</p>
             </div>
-            <h3>Background color</h3>
-            <p>Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities do not set color, so in some cases you’ll want to use .text-* color utilities.</p>
-            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-            <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
-            <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
-            <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
-            <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
-            <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
-            <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
-            <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
-            <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
-            <h3>Background gradient</h3>
-            <p>By adding a .bg-gradient class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.
-            Do you need a gradient in your custom CSS? Just add background-image: var(--bs-gradient);.</p>
-            <h3>Border</h3>
-            <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>
-            <span class="border"></span>
-            <span class="border-top"></span>
-            <span class="border-end"></span>
-            <span class="border-bottom"></span>
-            <span class="border-start"></span>
-            <h3>Border color</h3>
-            <p>Change the border color using utilities built on our theme colors.</p>
-            <span class="border border-primary"></span>
-            <span class="border border-secondary"></span>
-            <span class="border border-success"></span>
-            <span class="border border-danger"></span>
-            <span class="border border-warning"></span>
-            <span class="border border-info"></span>
-            <span class="border border-light"></span>
-            <span class="border border-dark"></span>
-            <span class="border border-white"></span>
-            <h3>Border-width</h3>
-            <span class="border border-1"></span>
-            <span class="border border-2"></span>
-            <span class="border border-3"></span>
-            <span class="border border-4"></span>
-            <span class="border border-5"></span>
-            <h3>Border-radius</h3>
-            <p>Add classes to an element to easily round its corners.</p>
-            <img src="..." class="rounded" alt="...">
-            <img src="..." class="rounded-top" alt="...">
-            <img src="..." class="rounded-end" alt="...">
-            <img src="..." class="rounded-bottom" alt="...">
-            <img src="..." class="rounded-start" alt="...">
-            <img src="..." class="rounded-circle" alt="...">
-            <img src="..." class="rounded-pill" alt="...">
-            <h3>Sizes</h3>
-            <p>Use the scaling classes for larger or smaller rounded corners. Sizes range from 0 to 3, and can be configured by modifying the utilities API.</p>
-            <img src="..." class="rounded-0" alt="...">
-            <img src="..." class="rounded-1" alt="...">
-            <img src="..." class="rounded-2" alt="...">
-            <img src="..." class="rounded-3" alt="...">
 
-            <h3>Colors</h3>
-            <p>Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.</p>
-            <p class="text-primary">.text-primary</p>
-            <p class="text-secondary">.text-secondary</p>
-            <p class="text-success">.text-success</p>
-            <p class="text-danger">.text-danger</p>
-            <p class="text-warning bg-dark">.text-warning</p>
-            <p class="text-info bg-dark">.text-info</p>
-            <p class="text-light bg-dark">.text-light</p>
-            <p class="text-dark">.text-dark</p>
-            <p class="text-body">.text-body</p>
-            <p class="text-muted">.text-muted</p>
-            <p class="text-white bg-dark">.text-white</p>
-            <p class="text-black-50">.text-black-50</p>
-            <p class="text-white-50 bg-dark">.text-white-50</p>
+            <div class="bg-transparent p-4">
+                <h3>#Background color</h3>
+                <p>Similar to the contextual text color classes, set the background of an element to any contextual class. Background utilities do not set color, so in some cases you’ll want to use .text-* color utilities.</p>
+                <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+                <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+                <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+                <h3>Background gradient</h3>
+                <p>By adding a .bg-gradient class, a linear gradient is added as background image to the backgrounds. This gradient starts with a semi-transparent white which fades out to the bottom.
+                Do you need a gradient in your custom CSS? Just add background-image: var(--bs-gradient);.</p>
+            </div>
 
-            <h3>Overflow</h3>
-            <p>Adjust the overflow property on the fly with four default values and classes. These classes are not responsive by default.</p>
+            <div class="bg-info p-4">
+                <h3>#Border</h3>
+                <p>Use border utilities to add or remove an element’s borders. Choose from all borders or one at a time.</p>
+                <div class="d-flex justify-content-center m-5" style="height: 100px;">
+                    <span class="border p-5 m-2">border</span>
+                    <span class="border-top p-5 m-2">border-top</span>
+                    <span class="border-end p-5 m-2">border-end</span>
+                    <span class="border-bottom p-5 m-2">border-bottom</span>
+                    <span class="border-start p-5 m-2">border-start</span>
+                </div>
+                <h3>Border color</h3>
+                <p>Change the border color using utilities built on our theme colors.</p>
+                <div class="d-flex justify-content-center m-5">
+                    <span class="border border-primary p-5 m-2">border-primary</span>
+                    <span class="border border-secondary p-5 m-2">border-secondary</span>
+                    <span class="border border-success p-5 m-2">border-success</span>
+                    <span class="border border-danger p-5 m-2">border-danger</span>
+                    <span class="border border-warning p-5 m-2">border-warning</span>
+                </div>
+                <div class="d-flex justify-content-center m-5">
+                    <span class="border border-info p-5 m-2">border-info</span>
+                    <span class="border border-light p-5 m-2">border-light</span>
+                    <span class="border border-dark p-5 m-2">border-dark</span>
+                    <span class="border border-white p-5 m-2">border-white</span>
+                </div>
+                
+                <h3>Border-width</h3>
+                <div class="d-flex justify-content-center m-5">
+                    <span class="border border-1 p-5 m-2">border-1</span>
+                    <span class="border border-2 p-5 m-2">border-2</span>
+                    <span class="border border-3 p-5 m-2">border-3</span>
+                    <span class="border border-4 p-5 m-2">border-4</span>
+                    <span class="border border-5 p-5 m-2">border-5</span>
+                </div>
 
-            <div class="overflow-auto">...</div>
-            <div class="overflow-hidden">...</div>
-            <div class="overflow-visible">...</div>
-            <div class="overflow-scroll">...</div>
+                <h3>Border-radius</h3>
+                <p>Add classes to an element to easily round its corners.</p>
+                <div class="d-flex justify-content-center m-5">
+                    <img src="images/144084~1.BMP" class="rounded" alt="...">
+                </div>
+                <div class="d-flex justify-content-center m-5">
+                    <img src="images/178016~1.BMP" class="rounded-top" alt="...">
+                </div>
+                <div class="d-flex justify-content-center m-5">
+                    <img src="images/BEACH3.JPG" class="rounded-end" alt="...">
+                </div>
+                <div class="d-flex justify-content-center m-5">
+                    <img src="images/Copy of 1 (2).jpg" class="rounded-bottom" alt="...">
+                </div>
+                <div class="d-flex justify-content-center m-5">
+                    <img src="images/webshots11.bmp" class="rounded-start" alt="...">
+                </div>
+                <div class="d-flex justify-content-center m-5">
+                    <img src="images/nature_moon light.jpg" class="rounded-circle" alt="...">
+                </div>
+                <div class="d-flex justify-content-center m-5">
+                    <img src="images/north-pole-sun-moon.jpg" class="rounded-pill" alt="...">
+                </div>
+                
+                <h3>Sizes</h3>
+                <p>Use the scaling classes for larger or smaller rounded corners. Sizes range from 0 to 3, and can be configured by modifying the utilities API.</p>
+            </div>
             
-            <h3>Position values</h3>
-            <p>Quick positioning classes are available, though they are not responsive.</p>
-            <div class="position-static">...</div>
-            <div class="position-relative">...</div>
-            <div class="position-absolute">...</div>
-            <div class="position-fixed">...</div>
-            <div class="position-sticky">...</div>
+            <div class="bg-transparent p-4">
+                <h3>#Colors</h3>
+                <p>Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.</p>
+                <p class="text-primary">.text-primary</p>
+                <p class="text-secondary">.text-secondary</p>
+                <p class="text-success">.text-success</p>
+                <p class="text-danger">.text-danger</p>
+                <p class="text-warning bg-dark">.text-warning</p>
+                <p class="text-info bg-dark">.text-info</p>
+                <p class="text-light bg-dark">.text-light</p>
+                <p class="text-dark">.text-dark</p>
+                <p class="text-body">.text-body</p>
+                <p class="text-muted">.text-muted</p>
+                <p class="text-white bg-dark">.text-white</p>
+                <p class="text-black-50">.text-black-50</p>
+                <p class="text-white-50 bg-dark">.text-white-50</p>
+            </div>
+            
+            <div class="bg-info p-4">
+                <h3>#Overflow</h3>
+                <p>Adjust the overflow property on the fly with four default values and classes. These classes are not responsive by default.</p>
 
+                <h4>overflow-auto</h4>
+                <div class="overflow-auto" style="height: 200px;">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit dolores magnam totam quasi, quam quod recusandae ratione id iure sapiente mollitia expedita deleniti accusantium aut nihil inventore earum accusamus perferendis? Debitis exercitationem hic commodi omnis, id maxime. Provident, quibusdam tempora. Dolores vero rerum ratione. Officiis, amet! Doloremque, ut totam. Temporibus voluptatum molestias ipsa, mollitia quidem pariatur quam suscipit illo amet, similique ea. Ratione illum libero, eum fugit quaerat voluptatem iste dicta blanditiis rem a recusandae alias! Dolorem, odit! Modi voluptatem quidem reiciendis minima fugiat. Minus facilis quisquam quaerat accusantium dicta nam quae laborum dolores sed vitae officiis assumenda a voluptate architecto, mollitia repellat dignissimos adipisci odit nobis magni ea nihil ab consectetur voluptatem. Delectus dicta necessitatibus nulla, eaque dolor exercitationem quibusdam sequi obcaecati tempore tenetur cumque illum accusantium sint atque laboriosam ullam ab sed rem consequuntur amet voluptate dignissimos repudiandae? Doloribus in nisi distinctio omnis fugiat et hic reiciendis cumque earum eos, enim, est ex voluptatibus aspernatur, cupiditate aliquid. Magnam, ex id odit nihil a nemo iusto facilis mollitia ea nostrum perspiciatis expedita enim tempora voluptate vero omnis eveniet molestias eaque aut nisi. Maiores, delectus ratione? In aperiam dignissimos odit eum sequi nam ducimus delectus corporis mollitia. Quos, vel nihil.</p>
+                </div>
+                <h4>overflow-hidden</h4>
+                <div class="overflow-hidden" style="height: 200px;">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure enim, nemo quam, perferendis expedita quas corporis voluptas distinctio rerum debitis eius vero officia. Suscipit doloribus sequi omnis culpa cumque eligendi illum voluptas hic iste saepe officia, quibusdam, incidunt iusto dolor dolore sapiente, ad debitis nobis ex vero! Ullam voluptatibus deleniti voluptatem! Ipsam, reprehenderit est vero quia incidunt, perspiciatis possimus fugit quaerat distinctio nesciunt delectus eius rem numquam voluptas quam, modi nemo nostrum laborum quibusdam accusamus corrupti deserunt mollitia animi. Obcaecati, in magni cupiditate illo nihil possimus beatae nam ab quidem sequi, velit eaque corporis aliquid ratione, error nostrum quae? Assumenda nesciunt numquam asperiores aliquam, iure laborum incidunt explicabo, repellat maxime est natus obcaecati consectetur velit! Officiis enim libero nihil ad pariatur laborum, assumenda voluptatum, dolorem rem nulla commodi odio inventore minus nisi explicabo! Provident similique natus quam nostrum fugiat voluptate reprehenderit libero numquam, harum aliquam consequatur exercitationem aspernatur voluptatum eos. Nihil soluta atque quidem magni dolore. Possimus itaque earum laborum dicta, maxime consequuntur, ab exercitationem quaerat expedita a asperiores minus ea, esse dolor omnis sed necessitatibus labore non totam nostrum quas odio ullam magni? Nam vero dolorum soluta voluptate numquam suscipit delectus quas at voluptates dolore unde, sed quae atque? ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsa maxime illum blanditiis repudiandae molestiae optio. Blanditiis, delectus ipsum quas soluta aut eius facilis pariatur dolor voluptas ullam perspiciatis cupiditate officia laborum accusamus nisi accusantium eligendi! Dolores velit sequi ipsam quisquam fugiat rem, fugit asperiores, perferendis quasi eius laboriosam hic omnis, est vitae odit praesentium libero ad cupiditate dicta maxime earum! Accusantium praesentium ut harum repudiandae eos doloribus aliquam, fugiat molestias laborum quam veritatis dolorem, eius, aspernatur debitis exercitationem laboriosam maiores iusto quia incidunt culpa sint recusandae modi placeat quasi? Dolores, error nihil quidem a numquam iusto iure in distinctio.</p>
+                </div>
+                <h4>overflow-scroll</h4>
+                <div class="overflow-scroll" style="height: 200px;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, temporibus praesentium expedita commodi, suscipit rerum impedit delectus illum distinctio, atque quos voluptate et nemo magnam cumque. Natus odio ipsa libero commodi qui neque dolores autem doloremque? Omnis illum corrupti accusantium fugit unde voluptatum tempora molestiae, obcaecati pariatur commodi sint adipisci sunt labore vitae. Molestias perferendis nemo officiis, earum nulla doloremque magnam asperiores veniam corrupti iusto enim eum. Earum dolores iure magni repellendus vel quibusdam! Maiores asperiores mollitia eaque quos cum quam eos et at suscipit. Similique, perferendis sapiente molestias sunt numquam, quisquam dolore delectus fugit inventore voluptatum nisi ipsa veritatis repudiandae, odio temporibus architecto fuga nobis repellendus ea aliquid aperiam illo deserunt quo omnis? Doloribus illum dicta nesciunt qui eum, ratione autem explicabo at officiis, similique inventore, aliquam aliquid veritatis tenetur sequi perspiciatis enim laudantium dolorem ab distinctio a eligendi quod. Quia dolorum quo odio quas eum nesciunt doloribus exercitationem! Quia porro voluptatibus iure mollitia repellat quas sed voluptates autem illo neque officiis provident nostrum, eum, vel suscipit at dignissimos libero. Voluptas impedit fugiat, explicabo, quod suscipit omnis repudiandae architecto aut velit eveniet atque ullam recusandae nihil corrupti doloremque possimus, vel blanditiis odio? Incidunt doloremque et itaque tempore necessitatibus consequatur! ipsum dolor sit amet, consectetur adipisicing elit. Quae doloribus voluptas accusamus optio maiores porro laudantium quisquam et quidem id, exercitationem, voluptates recusandae earum. Dolorem, minima eaque veniam odio molestiae consectetur a natus? Exercitationem quas obcaecati nemo maxime, porro repellendus molestias accusantium unde vitae corporis vero, placeat culpa totam, deserunt velit alias omnis labore! Quia excepturi minima labore odio corporis totam ducimus at nemo unde aspernatur, officia, qui facere ipsa. Rerum, sunt dicta nesciunt, iste cumque earum provident distinctio officia nulla quos rem reprehenderit modi voluptatibus. Laborum molestiae porro ea ipsum repudiandae facere, quo exercitationem dolores voluptates, laboriosam autem esse.</p>
+                </div>
+                <h4>overflow-visible</h4>
+                <div class="overflow-visible" style="height: 200px;">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur corporis perferendis, quas ipsam architecto eos veritatis voluptatem aliquid fuga recusandae eius asperiores ipsa, repellat quia blanditiis? Possimus quod veritatis dolor ipsa sint magnam saepe odit id, ullam doloribus deserunt libero ratione, harum laborum unde. Iusto culpa hic deserunt, assumenda ducimus saepe quae incidunt ipsam autem nemo molestias obcaecati id, sint, laudantium debitis amet. Iusto reprehenderit ab ipsum minus, quibusdam architecto dicta sunt eius? Reprehenderit in quae corrupti molestiae laborum illum? Tempore veritatis aut, ad nam itaque omnis exercitationem aliquid laudantium illum autem consequuntur iure culpa ab harum fugit ratione odio at repellendus ipsum, excepturi enim doloremque sapiente. Odit fuga maxime excepturi optio ratione, ut odio voluptates illo labore modi deserunt molestias. Nulla, consequuntur delectus. Veritatis sint aliquid sunt modi voluptatum eum nam, quis molestiae optio officia velit unde necessitatibus, corporis consequatur quia tenetur commodi rerum repudiandae eaque, magnam quas sed. Delectus ipsum, odit deserunt sint aut officiis eos illum perspiciatis officia reprehenderit, inventore blanditiis doloribus deleniti sit fugiat? Aspernatur voluptates commodi omnis? Odio nisi nam dolores cumque, molestiae consequatur esse! Doloremque enim asperiores quos nisi. Quod deserunt, voluptatem asperiores libero magni, sunt officia illo, provident voluptates doloribus maxime non hic? ipsum dolor, sit amet consectetur adipisicing elit. Optio, expedita praesentium, nam quibusdam veritatis quod sed ut repellat esse necessitatibus iure est nemo vero! Accusantium sunt culpa odit dignissimos corrupti tempora nesciunt? Cupiditate, tenetur reiciendis. Vitae voluptates quibusdam quos omnis, animi dignissimos laborum eos tenetur perferendis iste hic mollitia dicta incidunt nobis nihil facere maxime maiores libero saepe rem. A dolor iure hic minus, perspiciatis, libero vitae iusto voluptatibus qui cupiditate, nisi asperiores facere eveniet laborum culpa eum odit quas quos et provident cumque fugiat quae voluptatem! Sit amet debitis, eius cumque mollitia laudantium culpa? Velit asperiores nihil architecto nostrum.</p>
+                </div>
+                
+                
+                <h3>#Position values</h3>
+                <p>Quick positioning classes are available, though they are not responsive.</p>
+                <div class="position-static"><p>position-static</p></div>
+                <div class="position-relative"><p>position-relative</p></div>
+                <div class="position-absolute"><p>position-absolute</p></div>
+                <div class="position-fixed"><p>position-fixed</p></div>
+                <div class="position-sticky"><p>position-sticky</p></div>
+            </div>
         </div>
 
     
